@@ -1,0 +1,22 @@
+.contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    h1{
+        margin: 2rem;
+        text-align: center;
+    }
+}
+.mail{
+    display: flex;
+    justify-content: center;
+    a{
+        width: 50%;
+        text-decoration: none;
+        color: black;
+        padding: 5px;
+        border: 1px solid;
+        border-radius: 15px;
+        background: #75AEE3;
+    }
+}

@@ -1,11 +1,15 @@
-import ImportPdf from "./ImportPdf";
-
+import cvBenoit from '../assets/cvbenoit.jpg'
+import './Competences.scss'
 
 function Competences() {
     return (
         <div>
+            <div className='title'>
             <h1>Compétences</h1>
-            <ImportPdf />
+            </div>
+            <div className='cv'>
+           <img src={cvBenoit} alt="cv"/>
+           </div>
         </div>
     );
 }
