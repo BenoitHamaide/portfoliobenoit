@@ -1,0 +1,7 @@
+.App{
+    height: 100vh;
+    border-radius: 30px;
+    border: 1px solid black;
+    background:  #097dc1;
+    overflow: hidden;
+}
