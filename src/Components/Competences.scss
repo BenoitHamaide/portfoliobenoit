@@ -13,3 +13,13 @@ img{
     display: flex;
     justify-content: center;
 }
+@media (min-width: 768px) {
+    .cv {
+      img {
+        background: center;
+        height: 80vh;
+    width: auto;
+      }
+    }
+  }
+  

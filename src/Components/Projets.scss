@@ -5,3 +5,38 @@
     flex-direction: column;
     align-items: center;
 }
+.image-block-container {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent; /* Facultatif pour définir la couleur de la barre de défilement */
+    margin-top: 20px;
+}
+.element1, .element2 {
+    width: 80vw;
+    align-items: center;
+    img {
+        background: center/cover;
+        height: 90%;
+        width: 100%;
+    }
+}
+.image-block-container::-webkit-scrollbar {
+    display: none;
+}
+@media (min-width: 768px) {
+    .element1, .element2 {
+      img {
+        background: center;
+        height: 80vh;
+    width: auto;
+      }
+      p{
+        width: 50vw;
+      }
+    }
+  }
+  

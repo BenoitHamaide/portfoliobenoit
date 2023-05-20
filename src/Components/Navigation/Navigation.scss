@@ -1,51 +1,77 @@
 .burger-menu {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
     position: relative;
-   width: 100%;
-  }
+  z-index: 1;
+  background: rgb(117, 174, 227);
+border-radius: 30px 30px 0 0;
   
+  }
+  .menu-overlay {
+    position: absolute;
+    top: 2.5rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(117, 174, 227); 
+  }
   .burger-menu-btn {
-    background-color: transparent;
     border: none;
-    color: #333;
     cursor: pointer;
-    font-size: 1.2rem;
-    padding: 1rem; 
-    width: 100%;
-    background: rgb(117, 174, 227);
-    border-radius: 30px 30px 0  0;
+    font-size: 1.2rem; 
+    right: 6%;
 
-  }
-
-  .burger-menu-list {
-    background: rgb(117, 174, 227);
+    font-weight: bold;
+    border-radius: 0;
+   &:hover{
   
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    list-style: none;
-    margin: 0;
-    padding: 1rem;
-    top: 100%;
-    position: absolute; 
-        left: 50%;
-        transform: translate(-50%);
-    width: 200px;
-    z-index: 1;
-    a{
-        text-decoration: none;
+.menuIcon{
+  color: white;
   }
 }
-  .burger-menu-item {
-    border-bottom: 1px solid #ddd;
-    color: #333;
-    padding: 0.5rem;
-    text-align: center;
-    &:hover{
-        background: #05050515;
-        border-radius: 15px;
+}
+.nav{
+  background: rgba(117, 174, 227, 0.973);
+  left: 50%;
+        transform: translate(-50%);
+        width: 17rem;
+        border-radius: 0 0 15px 15px;
+}
+.hover-text {
+  text-align: center;
+  margin: 0;
+  span{
+    font-weight: bold;
+  }
+  
+}a:hover{
+
+    color: whitesmoke;
+  }
+
+.hover-text:hover {
+  color: whitesmoke;
+}
+.MuiFormControlLabel-root{
+    .MuiSwitch-root{
+      margin-left: 20px;
+    }
+    .MuiTypography-root{
+      height: 2.2rem;
+    }
+    .material-icons{
+      width: 40px;
+      font-size: 1rem;
+      height: 2rem;
+    }
+    .wire{
+      color: grey;
     }
   }
-  
-  .burger-menu-item:last-child {
-    border-bottom: none;
+  .MuiButtonBase-root{
+    svg{
+    font-size: 1.8rem;
+  } 
   }
-  

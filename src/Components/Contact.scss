@@ -11,12 +11,21 @@
     display: flex;
     justify-content: center;
     a{
-        width: 50%;
         text-decoration: none;
-        color: black;
-        padding: 5px;
-        border: 1px solid;
-        border-radius: 15px;
-        background: #75AEE3;
+        color: whitesmoke;
     }
+    Button{
+        background: #75AEE3;
+        width: 70%;
+    }
+}
+@media (min-width: 768px) {
+.mail{
+    display: flex;
+    justify-content: center;
+    Button{
+        width: 30%;
+    }
+        
+}
 }

@@ -1,13 +1,15 @@
+import { Button } from '@mui/material';
 import './Contact.scss'
+import { Mail } from '@mui/icons-material';
 
 function Contact() {
     return (
         <div className='contact'>
             <h1>Contact</h1>
             <div className='mail'>
-            <a href={`mailto:${'hamaidebenoit@gmail.com'}`}>
+            <Button variant='contained' size='medium' color='success' endIcon={<Mail />}> <a href={`mailto:${'hamaidebenoit@gmail.com'}`}>
      Envoyez moi un mail
-    </a></div>
+    </a></Button></div>
         </div>
     );
 }
