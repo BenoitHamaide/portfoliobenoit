@@ -7,11 +7,13 @@
   z-index: 1;
   background: rgb(117, 174, 227);
 border-radius: 30px 30px 0 0;
-  
+  button{
+    padding: 1rem;
+  }
   }
   .menu-overlay {
     position: absolute;
-    top: 2.5rem;
+    top: 3.8rem;
     left: 0;
     right: 0;
     bottom: 0;

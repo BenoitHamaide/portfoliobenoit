@@ -19,6 +19,8 @@ function App() {
   return (
     <Router>
       <div className={darkMode ? 'dark-mode' : 'App'}>
+      <div className="background"></div>
+      <div className="content">
         <Navigation darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
         <Routes>
           <Route path="/" element={<Accueil />} />
@@ -26,6 +28,7 @@ function App() {
           <Route path="/competences" element={<Competences />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+      </div>
       </div>
     </Router>
   );

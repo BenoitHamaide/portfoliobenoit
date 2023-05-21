@@ -11,12 +11,13 @@ function Accueil() {
         <img src={benoit} alt="auteur" />
       </div>
       <div className="container-right">
-        <h1>HAMAIDE Benoit</h1>
+        <h1>Benoît HAMAÏDE</h1>
         <p className="subtitle">Développeur Web et Web Mobile</p>
         <p className="description">Je suis un développeur web passionné, j'aime travailler en équipe et j'ai une forte éthique de travail.
         </p>
         <p>Constamment à la recherche de nouveaux défis, je suis prêt à apprendre de nouvelles technologies pour améliorer mes compétences en développement web.</p>
-      </div> <Fab className="Mail" >
+      </div> <Fab className="Mail"
+      size="large" >
           <a href={`mailto:${'hamaidebenoit@gmail.com'}`}>
              <Mail />
           </a>
