@@ -16,9 +16,47 @@
     }
     Button{
         background: #75AEE3;
-        width: 70%;
+        width: 100%;
     }
 }
+.contactContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.MuiButtonBase-root{
+width: 4rem;
+height: auto;
+}
+.linkedin{
+   .link{
+    
+        height: 4rem;
+        width: auto;
+    } 
+}
+.social{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-top: 1rem;
+    justify-content: space-between;
+    width: 10rem;
+
+}
+.phone-button {
+    transition: background-color 0.3s ease;
+    height: 2.9rem;
+   
+  }
+  a{
+    text-decoration: none;
+  }
+  .phone-button.active {
+    background-color: #4caf50;
+    width: 7rem;
+    
+  }
 @media (min-width: 768px) {
 .mail{
     display: flex;

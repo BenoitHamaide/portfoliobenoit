@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { List, ListItem, ListItemText, Divider, IconButton, FormControlLabel, Switch, Icon } from '@mui/material';
+import { List, ListItem, ListItemText, Divider, IconButton} from '@mui/material';
 import './Navigation.scss';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
@@ -81,7 +81,7 @@ function Navigation({ darkMode, toggleDarkMode }) {
         </div>
       )}
     <div className='container1'>
-    <span style={{color: darkMode ? 'grey' : 'yellow'}}><WbSunnyIcon/></span>
+    <span style={{color: darkMode ? 'grey' : 'yellow'}}><WbSunnyIcon fontSize='large'/></span>
     <div className='switch-checkbox'>
   
       <label className='switch'>
@@ -92,7 +92,7 @@ onChange={toggleDarkMode}
       <span className='slider round'></span>
       </label>
       </div>
-      <span style={{color: darkMode ? 'whitesmoke' : 'grey'}}> <Brightness3Icon/></span>
+      <span style={{color: darkMode ? 'whitesmoke' : 'grey'}}> <Brightness3Icon fontSize='large'/></span>
       </div>
     </div>
  
