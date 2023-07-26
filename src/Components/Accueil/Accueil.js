@@ -1,5 +1,5 @@
 import "./Accueil.scss";
-import benoit from "../../assets/benoit.webp";
+import benoit from "../../assets/benoit.jpg";
 import { Fab } from "@mui/material";
 import { Mail } from "@mui/icons-material";
 

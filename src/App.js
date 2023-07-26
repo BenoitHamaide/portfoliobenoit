@@ -19,7 +19,7 @@ function App() {
   return (
     <Router>
       <div className={darkMode ? 'dark-mode' : 'App'}>
-      <div className="background"></div>
+      
       <div className="content">
         <Navigation darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
         <Routes>

@@ -9,8 +9,8 @@
       background: center/cover;
       border-radius: 50%;
       margin: 2rem;
-      margin-bottom: 1.8rem;
-      margin-top: 1.5rem;
+      margin-bottom: 0.8rem;
+      margin-top: 3.5rem;;
       border-radius: 50%;
 background: #69b1e8;
 box-shadow:  -21px -21px 42px #5996c5,
@@ -79,8 +79,17 @@ box-shadow:  -8px -8px 42px #5996c5,
     display: flex;
     flex-direction: row;
     justify-content: center;
+    height: 75vh;
+
     button{
+      margin-bottom: -4.5rem;
       padding: 2rem;
+      transition: 1s;
+      &:hover{
+        transition: 1s;
+        transform: scale(1.2);
+      }
+      
     }
     .contain {
       display: flex;
@@ -96,6 +105,8 @@ box-shadow:  -8px -8px 42px #5996c5,
     
     .container-right {
       margin-right: 1.5rem;
+      margin-bottom: -4.5rem;
+    
     }
   }
 }

@@ -7,6 +7,9 @@ import CloseIcon from '@mui/icons-material/Close';
 import '../../App.scss'
 import WbSunnyIcon from '@mui/icons-material/WbSunny';
 import Brightness3Icon from '@mui/icons-material/Brightness3';
+import Home from '../HomeButton';
+
+
 
 function Navigation({ darkMode, toggleDarkMode }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,7 +38,7 @@ function Navigation({ darkMode, toggleDarkMode }) {
   }, []);
 
   return (
-
+<div className='containNav'>
     <div className="burger-menu" ref={menuRef}>
       <IconButton
         className={`burger-menu-btn ${isOpen ? 'open' : ''}`}
@@ -80,6 +83,7 @@ function Navigation({ darkMode, toggleDarkMode }) {
           </List>
         </div>
       )}
+<Home />
     <div className='container1'>
     <span style={{color: darkMode ? 'grey' : 'yellow'}}><WbSunnyIcon fontSize='large'/></span>
     <div className='switch-checkbox'>
@@ -88,14 +92,14 @@ function Navigation({ darkMode, toggleDarkMode }) {
       <input type='checkbox'
       checked={darkMode}
 onChange={toggleDarkMode}
-/> 
+/>
       <span className='slider round'></span>
       </label>
       </div>
       <span style={{color: darkMode ? 'whitesmoke' : 'grey'}}> <Brightness3Icon fontSize='large'/></span>
       </div>
     </div>
- 
+    </div>
   );
 }
 

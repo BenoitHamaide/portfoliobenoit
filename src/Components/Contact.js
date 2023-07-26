@@ -1,9 +1,9 @@
 import { Button } from '@mui/material';
 import './Contact.scss'
-import { Mail } from '@mui/icons-material';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { useState } from 'react';
 import CallIcon from '@mui/icons-material/Call';
+import ContactForm from './ContactForm';
 
 function Contact() {
     const [showPhoneNumber, setShowPhoneNumber] = useState(false);
@@ -20,9 +20,7 @@ function Contact() {
         <div className='contact'>
             <h1>Contact</h1>
             <div className='mail'>
-            <Button variant='contained' size='medium' color='success' endIcon={<Mail />}> <a href={`mailto:${'hamaidebenoit@gmail.com'}`}>
-     Envoyez moi un mail
-    </a></Button></div>
+            </div>
         </div>
         <div className='social'>
         <Button 
@@ -40,6 +38,7 @@ function Contact() {
       </Button>
     </a>
     </div>
+    <ContactForm />
         </div>
     );
 }

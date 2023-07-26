@@ -1,11 +1,13 @@
-import Carousel from './Carousel';
+import Cards from './Cards/Cards';
+
 import './Projets.scss'
 
 function Projets() {
     return (
         <div className='projets'>
             <h1>Mes projets</h1>
-            <Carousel />
+            
+            <Cards />
         </div>
     );
 }
